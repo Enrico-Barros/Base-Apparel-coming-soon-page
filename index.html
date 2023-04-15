@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Interactive rating component | Enrico Colombini</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="Icon" href="Images/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">   
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="left">
+                    <div class="logo">
+                        <img src="Images/logo.svg" alt="">
+                    </div>
+                    <div class="content">
+                        <h1><span>We're</span> coming soon</h1>
+                        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+                            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                        <form class="email">
+                            <input type="text" id="mail" placeholder="Email Adress" name="" maxlength="256" >
+                            <div id="error_icon">
+                                <img src="Images/icon-error.svg" alt="">
+                            </div>
+                            <button onclick="return validate()" id="arrow">
+                                <img src="Images/icon-arrow.svg" alt="">
+                            </button>
+                            <div id="error_text">Please provide a valid email</div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="Images/hero-desktop.jpg" alt="" id="photo_1">
+                    <img src="Images/hero-mobile.jpg" alt="" id="photo_2">
+                </div>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
